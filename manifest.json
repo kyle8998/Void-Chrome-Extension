@@ -1,9 +1,11 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
 
   "name": "The Void",
   "description": "This extension will make the current page void",
   "version": "1.0",
+
+
 
   "browser_action": {
    "default_icon": "void.png",
@@ -11,6 +13,8 @@
   },
 
   "permissions": [
-   "activeTab"
+    "webNavigation",
+    "*://*/*",
+    "activeTab"
    ]
 }

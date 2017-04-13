@@ -12,7 +12,7 @@ var memes = [
 for (var i = 0; i < length; i++) {
 	var memeIndex = Math.floor(getRandomImage(memes)); //Gets index of memes array
     images[i].src = memes[memeIndex];
-    document.body.style.backgroundImage = "url('http://www.barebooks.com/wp-content/uploads/2013/10/GM05.gif')";
+    // document.body.style.backgroundImage = "url('http://www.barebooks.com/wp-content/uploads/2013/10/GM05.gif')";
  }
 
 
