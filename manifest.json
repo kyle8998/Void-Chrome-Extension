@@ -4,6 +4,8 @@
   "name": "The Void",
   "description": "This extension will make the current page void",
   "version": "1.0",
+  "background": { "scripts": ["void.js"] },
+  "permissions": [ "webNavigation", "*://*/*" ],
 
 
 
@@ -12,9 +14,18 @@
    "default_popup": "popup.html"
   },
 
-  "permissions": [
+  "content_scripts": [
+   {
+     "matches": ["https://play.google.com/*"],
+     "css": ["mystyles.css"],
+     "js": ["void.js]
+   }
+ ],
+
+
+  /*"permissions": [
     "webNavigation",
     "*://*/*",
     "activeTab"
-   ]
+   ]*/
 }
