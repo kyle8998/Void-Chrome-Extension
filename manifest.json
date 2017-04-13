@@ -14,18 +14,10 @@
    "default_popup": "popup.html"
   },
 
-  "content_scripts": [
-   {
-     "matches": ["https://play.google.com/*"],
-     "css": ["mystyles.css"],
-     "js": ["void.js]
-   }
- ],
 
-
-  /*"permissions": [
+  "permissions": [
     "webNavigation",
     "*://*/*",
     "activeTab"
-   ]*/
+   ]
 }
